@@ -1,0 +1,20 @@
+.form-group{
+    width:400px; 
+    align-items: center; 
+    margin: 12px 100px;
+    padding-top:10px;
+}
+form {
+    width: 700px;
+    margin: 0 auto;
+    background-color:aliceblue;
+    /* margin: 12px 100px; */
+    
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-style: normal;
+    font-family: Georgia, serif;
+    font-size: 50px;
+}

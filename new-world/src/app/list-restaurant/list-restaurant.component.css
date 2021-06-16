@@ -1,0 +1,10 @@
+img{
+    width:30%;
+    size: 0cm;   
+}
+#button{
+    position: absolute;
+    top:5;
+    right: 0;
+    background-color: rgb(15, 29, 223);   
+}

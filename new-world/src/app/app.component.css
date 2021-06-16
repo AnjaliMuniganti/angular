@@ -1,0 +1,15 @@
+footer{
+    padding:5px;
+    background-color: blueviolet;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    text-decoration: ghostwhite;
+}
+.nav{
+    position: fixed;
+    top:0;
+    overflow: hidden;
+}

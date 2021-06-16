@@ -1,0 +1,20 @@
+<div> <b><a href="logOut" [routerLink]="['/login']">Click here to logout</a></b></div>
+<h1>Login completed successfully</h1>
+<div class="card-group">
+  <div class="card-group">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let item of addRestaurants">
+        <div class="card bg-light mb-3" style="max-width: 18rem;">
+          <img class="card-img-top" src="{{item.imgUrl}}">
+          <div class="card-body">
+            <h5 class="card-title">{{item.name}}</h5>
+            <p class="card-text">{{item.email}}</p>
+            <p class="card-text">
+              <a href="{{item.webLink}}">{{item.name}}</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

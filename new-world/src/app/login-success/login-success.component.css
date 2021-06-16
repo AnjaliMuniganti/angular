@@ -1,0 +1,15 @@
+.card{
+    width: 250px;
+    margin: 0 auto;
+    grid-row: inherit;
+    height: 300px;
+}  
+ div button{
+    position: absolute;
+    top:5;
+    right: 0;
+    background-color: blueviolet;
+}
+.card-img-top{
+    height: 150px;
+}

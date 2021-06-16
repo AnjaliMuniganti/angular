@@ -1,0 +1,37 @@
+<div> <button id="button" type="submit" class="btn btn-primary button" [routerLink]="['/add']"
+  routerLinkActive="router-link-active">Back</button></div>
+<h1>Restaurant List</h1>
+<div class="container">
+  <div fxLayout="column" fxLayout.gt-xs="row">
+    <table class="table table-striped table-light table-responsive">
+      <thead>
+        <tr class="table-primary">
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Address</th>
+          <th scope="col">Weblink</th>
+          <th scope="col">ImgUrl</th>
+          <th scope="col">Cancel</th>
+          <th scope="col">Update</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of addRestaurants">
+          <th>{{item.name}}</th>
+          <th>{{item.email}}</th>
+          <th>{{item.address}}</th>
+          <th>
+            <a href="{{item.webLink}}">{{item.name}}</a>
+          </th>
+          <th>
+            <img src="{{item.imgUrl}}">
+          </th>
+          <th><button id="delete" class="btn btn-danger" (click)="removeRestaurant(item.id)">Delete</button></th>
+          <a routerLink="/update/{{item.id}}">
+            <th><button id="update" class="btn btn-primary">Update</button></th>
+          </a>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
